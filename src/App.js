@@ -4,6 +4,7 @@ import "./components/Film";
 import PromoBanner from './components/PromoBanner';
 import Film from "./components/Film";
 import SocialIcon from "./components/SocialIcon";
+import BackgroundVideo from "./components/BackgroundVideo";
 
 
 function App() {
@@ -185,6 +186,7 @@ function App() {
   
     <div >
       <Menu />
+        <BackgroundVideo />
         <PromoBanner />    
         <PopularNetflix/>
         <TredingNow />
