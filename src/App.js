@@ -86,6 +86,17 @@ function App() {
           }
 
 
+          const Footer = ()=>{
+
+            return (
+              <footer>
+              <p>©1997-2023 Netflix, Inc.</p>
+              <p>Gabriel Charib © 2023</p>
+            </footer>
+            )
+          }
+
+
   
   return (
   
@@ -96,7 +107,9 @@ function App() {
         {films.map((film, index) => (
                     <><Film title={film.title}  poster={film.image} description={film.description}/></>
           ))}
+      <Footer/>
     </div>
+    
   );
 }
 
