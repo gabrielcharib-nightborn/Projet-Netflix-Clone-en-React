@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./css/HomePage.css"; 
 import "./components/Film";
+import PromoBanner from './components/PromoBanner';
 import Film from "./components/Film";
 
 function App() {
@@ -90,10 +91,11 @@ function App() {
   
     <div >
       <Menu />
+        <PromoBanner />
         <PopularNetflix/>
         {films.map((film, index) => (
                     <><Film title={film.title}  poster={film.image} description={film.description}/></>
-                  ))}
+          ))}
     </div>
   );
 }

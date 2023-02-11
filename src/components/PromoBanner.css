@@ -1,0 +1,26 @@
+.promo-banner {
+    background-color: #141414;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .promo-banner h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .promo-banner p {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  .promo-banner button {
+    background-color: #ff4c4c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
