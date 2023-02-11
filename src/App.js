@@ -5,7 +5,8 @@ import PromoBanner from './components/PromoBanner';
 import Film from "./components/Film";
 import SocialIcon from "./components/SocialIcon";
 import BackgroundVideo from "./components/BackgroundVideo";
-
+import Menu  from "./components/Menu";
+import PopularNetflix from "./components/PopularNetflix";
 
 
 function App() {
@@ -28,60 +29,103 @@ function App() {
     {
       title: "The Shawshank Redemption",
       description: "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-      image: "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
     },
     {
       title: "The Godfather",
       description: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-      image: "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t2.PNG?raw=true"
     },
     {
       title: "The Dark Knight",
       description: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
-      image: "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg"
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p2.PNG?raw=true"
     },
     {
       title: "The Lord of the Rings: The Return of the King",
       description: "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
-      image: "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t3.PNG?raw=true"
     },
     {
       title: "Pulp Fiction",
       description: "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-      image: "https://m.media-amazon.com/images/M/MV5BMTkxMTA5OTAzMl5BMl5BanBnXkFtZTgwNjA5MDc3NjE@._V1_.jpg"
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t4.PNG?raw=true"
     },
     {
       title: "The Good, the Bad and the Ugly",
       description: "A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
-      image: "https://m.media-amazon.com/images/M/MV5BOTQ"
-    }];
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t5.PNG?raw=true"
+    },
+    {
+      title: "The Dark Knight",
+      description: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p6.PNG?raw=true"
+    },
+    {
+      title: "The Lord of the Rings: The Return of the King",
+      description: "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t7.PNG?raw=true"
+    },
+    {
+      title: "Pulp Fiction",
+      description: "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t8.PNG?raw=true"
+    },
+    {
+      title: "The Good, the Bad and the Ugly",
+      description: "A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+    },
+    {
+      title: "The Dark Knight",
+      description: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p2.PNG?raw=true"
+    },
+    {
+      title: "The Lord of the Rings: The Return of the King",
+      description: "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o1.PNG?raw=true"
+    },
+    {
+      title: "Pulp Fiction",
+      description: "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o1.PNG?raw=true"
+    },
+    {
+      title: "The Good, the Bad and the Ugly",
+      description: "A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t13.PNG?raw=true"
+    },
+    {
+      title: "The Dark Knight",
+      description: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/14.PNG?raw=true"
+    },
+    {
+      title: "The Lord of the Rings: The Return of the King",
+      description: "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t15.PNG?raw=true"
+    },
+    {
+      title: "Pulp Fiction",
+      description: "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t16.PNG?raw=true"
+    },
+    {
+      title: "The Good, the Bad and the Ugly",
+      description: "A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
+      image: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t17.PNG?raw=true"
+    }
+  
+  
+  
+  ];
 
 
   //  {films.map((film, index) => (
   //    <><Film title={film.title}  poster={film.image} description={film.description}/></>
 //))}
 
-
-      const Menu= () => {
-        return (
-       <div>
-          <nav className="main-nav"> 
-          <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></img></a>               
-            <a href="#home">Home</a>
-            <a href="#tvShows">TV Shows</a>
-            <a href="#movies">Movies</a>
-            <a href="#originals">Originals</a>
-            <a href="#">Recently   Added</a>
-            </nav> 
-          <nav class="sub-nav">
-
-   
-          <a href="#"><i className="fas fa-search sub-nav-logo"></i></a>
-          <a href="#"><i className="fas fa-bell sub-nav-logo"></i></a>       
-          </nav>
-       </div>   
-        )
-        }
 
         const TredingNow = () =>{
           return (
@@ -92,7 +136,7 @@ function App() {
                   <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t2.PNG?raw=true" alt=""></img></a>
                   <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t3.PNG?raw=true" alt=""></img></a>
                   <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t4.PNG?raw=true" alt=""></img></a>
-                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t5.PNG?raw=true" alt=""></img></a>
+                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t4.PNG?raw=true" alt=""></img></a>
                   <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t6.PNG?raw=true" alt=""></img></a>                  
                 </div>
             </div>
@@ -100,35 +144,7 @@ function App() {
 
         }
 
-        const PopularNetflix= () => {
-          return (
-           
-          <div className="location" id="home">
-            <h1 id="home">Popular on Netflix</h1>
-            <div class="box">
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p2.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p3.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p4.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p5.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p6.PNG?raw=true" alt=""></img></a>
-      
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p7.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p8.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p9.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p10.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p11.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p12.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p8.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p9.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p10.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p11.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p12.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p11.PNG?raw=true" alt=""></img></a>         
-            </div>
-        </div>
-          )
-          }
+
 
 
           const Footer = ()=>{
@@ -199,18 +215,17 @@ function App() {
 
   
   return (
-  
     <div >
-        <Menu />
-        <BackgroundVideo />
-        <PromoBanner />    
-        <PopularNetflix/>
-        <TredingNow />
-        <NetflixOriginal />
-        <SocialIcon />
-        <Leslogos />
-        <SubLinks />
-        <Footer/>
+      <Menu />
+      <BackgroundVideo />
+      <PromoBanner /> 
+      <PopularNetflix films={films}/>
+      <TredingNow />
+      <NetflixOriginal />
+      <SocialIcon />
+      <Leslogos />
+      <SubLinks />
+      <Footer/>
     </div>
     
   );
