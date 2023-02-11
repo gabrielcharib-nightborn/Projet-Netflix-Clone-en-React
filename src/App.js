@@ -3,10 +3,26 @@ import "./css/HomePage.css";
 import "./components/Film";
 import PromoBanner from './components/PromoBanner';
 import Film from "./components/Film";
+import SocialIcon from "./components/SocialIcon";
+
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
   const [showMovies, setShowMovies] = useState(false);
+  // mettre en place  le code pour les effect souris
+  //const [isHovered, setIsHovered] = useState(false);
+//   <div
+//   onMouseEnter={() => setIsHovered(true)}
+//   onMouseLeave={() => setIsHovered(false)}
+//   style={{
+//     width: 200,
+//     height: 300,
+//     boxShadow: isHovered ? '0 10px 20px rgba(0,0,0,0.19)' : 'none',
+//     transform: isHovered ? 'scale(1.1)' : 'scale(1)'
+//   }}
+// >
+  // <img src={`https://image.tmdb.org/t/p/w200/${film.poster_path}`} alt={film.title} />
+  // <h2>{film.title}</h2>
   const films = [
     {
       title: "The Shawshank Redemption",
@@ -42,7 +58,6 @@ function App() {
 
       const Menu= () => {
         return (
-          
        <div>
           <nav class="main-nav"> 
           <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></img></a>               
@@ -53,9 +68,6 @@ function App() {
             <a href="#">Recently Added</a>     
           </nav>
        </div>   
-         
-
-      
         )
         }
 
@@ -78,7 +90,12 @@ function App() {
               <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p9.PNG?raw=true" alt=""></img></a>
               <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p10.PNG?raw=true" alt=""></img></a>
               <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p11.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p12.PNG?raw=true" alt=""></img></a>        
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p12.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p8.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p9.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p10.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p11.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p12.PNG?raw=true" alt=""></img></a>         
             </div>
         </div>
       
@@ -114,6 +131,21 @@ function App() {
           </ul>
         </div>
 
+        const Leslogos = () => {
+          return (
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <a href="#" style={{ marginRight: '10px' }}>
+            </a>
+          
+            <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
+            
+            <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+          </div>
+          )
+        }
+
 
 
           const SubLinks = ()=> {
@@ -145,10 +177,13 @@ function App() {
     <div >
       <Menu />
         <PromoBanner />
+
+    
         <PopularNetflix/>
         {films.map((film, index) => (
                     <><Film title={film.title}  poster={film.image} description={film.description}/></>
           ))}
+      <SocialIcon />
       <SubLinks />
       <Footer/>
     </div>
