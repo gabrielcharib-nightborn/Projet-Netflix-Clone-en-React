@@ -61,8 +61,30 @@ function App() {
         )
         }
 
-
-
+        const PopularNetflix= () => {
+          return (
+           
+          <div class="location" id="home">
+            <h1 id="home">Popular on Netflix</h1>
+            <div class="box">
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p2.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p3.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p4.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p5.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p6.PNG?raw=true" alt=""></img></a>
+      
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p7.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p8.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p9.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p10.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p11.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p12.PNG?raw=true" alt=""></img></a>        
+            </div>
+        </div>
+      
+          )
+          }
 
 
   
@@ -76,9 +98,10 @@ function App() {
         <p className="main-text">
           Unlimited movies, TV shows, and more. Watch anywhere. Cancel anytime.
         </p>
+        <PopularNetflix/>
         <button className="main-cta">Join Free for 30 Days</button>
         {films.map((film, index) => (
-                    <><Film title={film.title}  poster={film.image}/></>
+                    <><Film title={film.title}  poster={film.image} description={film.description}/></>
                   ))}
         
       </main>
