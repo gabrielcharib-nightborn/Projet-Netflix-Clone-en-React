@@ -7,9 +7,9 @@ import SocialIcon from "./components/SocialIcon";
 import BackgroundVideo from "./components/BackgroundVideo";
 
 
+
 function App() {
-  const [showMenu, setShowMenu] = useState(false);
-  const [showMovies, setShowMovies] = useState(false);
+
   // mettre en place  le code pour les effect souris
   //const [isHovered, setIsHovered] = useState(false);
 //   <div
