@@ -56,29 +56,56 @@ function App() {
     }];
 
 
+  //  {films.map((film, index) => (
+  //    <><Film title={film.title}  poster={film.image} description={film.description}/></>
+//))}
+
+
       const Menu= () => {
         return (
        <div>
-          <nav class="main-nav"> 
+          <nav className="main-nav"> 
           <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></img></a>               
             <a href="#home">Home</a>
             <a href="#tvShows">TV Shows</a>
             <a href="#movies">Movies</a>
             <a href="#originals">Originals</a>
-            <a href="#">Recently Added</a>     
+            <a href="#">Recently   Added</a>
+            </nav> 
+          <nav class="sub-nav">
+
+   
+          <a href="#"><i className="fas fa-search sub-nav-logo"></i></a>
+          <a href="#"><i className="fas fa-bell sub-nav-logo"></i></a>       
           </nav>
        </div>   
         )
         }
 
+        const TredingNow = () =>{
+          return (
+            <div>
+              <h1 id="myList">Trending Now</h1>
+                <div className="box">
+                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t1.PNG?raw=true" alt=""></img></a>
+                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t2.PNG?raw=true" alt=""></img></a>
+                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t3.PNG?raw=true" alt=""></img></a>
+                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t4.PNG?raw=true" alt=""></img></a>
+                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t5.PNG?raw=true" alt=""></img></a>
+                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t6.PNG?raw=true" alt=""></img></a>                  
+                </div>
+            </div>
+          )
+
+        }
+
         const PopularNetflix= () => {
           return (
            
-          <div class="location" id="home">
+          <div className="location" id="home">
             <h1 id="home">Popular on Netflix</h1>
             <div class="box">
               <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true" alt=""></img></a>
-              <a href=""> <Film  /></a>
               <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p2.PNG?raw=true" alt=""></img></a>
               <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p3.PNG?raw=true" alt=""></img></a>
               <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p4.PNG?raw=true" alt=""></img></a>
@@ -95,10 +122,10 @@ function App() {
               <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p9.PNG?raw=true" alt=""></img></a>
               <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p10.PNG?raw=true" alt=""></img></a>
               <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p11.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p12.PNG?raw=true" alt=""></img></a>         
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p12.PNG?raw=true" alt=""></img></a>
+              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p11.PNG?raw=true" alt=""></img></a>         
             </div>
         </div>
-      
           )
           }
 
@@ -112,36 +139,18 @@ function App() {
             </footer>
             )
           }
-
-
-          <div class="sub-links">
-          <ul>
-            <li><a href="#">Audio and Subtitles</a></li>
-            <li><a href="#">Audio Description</a></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Gift Cards</a></li>
-            <li><a href="#">Media Center</a></li>
-            <li><a href="#">Investor Relations</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Legal Notices</a></li>
-            <li><a href="#">Corporate Information</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-
         const Leslogos = () => {
+          ///////////////////////////////////////////////////////
+          //pour l'instant j'arrive pas a utiliser des icones fa 
+          //////////////////////////////////////////////////////
           return (
             <div style={{ display: 'flex', justifyContent: 'center' }}>
             <a href="#" style={{ marginRight: '10px' }}>
             </a>
-          
-            <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
-            
-            <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
-            <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+            <a href="#"><i className="fab fa-facebook-square fa-2x logo"></i></a>
+            <a href="#"><i className="fab fa-instagram fa-2x logo"></i></a>
+            <a href="#"><i className="fab fa-twitter fa-2x logo"></i></a>
+            <a href="#"><i className="fab fa-youtube fa-2x logo"></i></a>
           </div>
           )
         }
@@ -150,7 +159,7 @@ function App() {
 
           const SubLinks = ()=> {
             return (
-              <div class="sub-links">
+              <div className="sub-links">
                   
           <ul>
             <li><a href="#">Audio and Subtitles</a></li>
@@ -176,14 +185,12 @@ function App() {
   
     <div >
       <Menu />
-        <PromoBanner />
-
-    
+        <PromoBanner />    
         <PopularNetflix/>
-        {films.map((film, index) => (
-                    <><Film title={film.title}  poster={film.image} description={film.description}/></>
-          ))}
+        <TredingNow />
+        
       <SocialIcon />
+      <Leslogos />
       <SubLinks />
       <Footer/>
     </div>
