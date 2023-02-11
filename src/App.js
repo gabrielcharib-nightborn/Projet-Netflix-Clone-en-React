@@ -37,46 +37,40 @@ function App() {
       description: "A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
       image: "https://m.media-amazon.com/images/M/MV5BOTQ"
     }];
+
+    const Head= () => {
+      return (
+      <div class="netflixLogo">        
+    
+        <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></img></a>
+    </div>
+      )
+      }
+
+      const Menu= () => {
+        return (
+      <div >        
+        <nav class="main-nav">                
+            <a href="#home">Home</a>
+            <a href="#tvShows">TV Shows</a>
+            <a href="#movies">Movies</a>
+            <a href="#originals">Originals</a>
+            <a href="#">Recently Added</a>     
+        </nav>
+      </div>
+        )
+        }
+
+
+
+
+
   
   return (
+  
     <div className="HomePage">
-      <header className="header">
-        <h1 className="logo">Netflix</h1>
-        <nav>
-          <button
-            className="header-menu-toggle"
-            onClick={() => setShowMenu(!showMenu)}
-          >
-            {showMenu ? "Close" : "Menu"}
-          </button>
-          <ul className={`header-menu ${showMenu ? "show" : ""}`}>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">TV Shows</a>
-            </li>
-            <li>
-              <a href="#" onClick={() => setShowMovies(!showMovies)}>
-                Movies
-              </a>
-              {showMovies && (
-                <ul className="movies-list">
-                  {films.map((film, index) => (
-                    <li key={index}>{film.title} ({film.year})</li>
-                  ))}
-                </ul>
-              )}
-            </li>
-            <li>
-              <a href="#">Recently Added</a>
-            </li>
-            <li>
-              <a href="#">My List</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Head />
+      <Menu />
       <main className="main">
         <h2 className="main-title">Watch Anywhere</h2>
         <p className="main-text">
@@ -84,10 +78,9 @@ function App() {
         </p>
         <button className="main-cta">Join Free for 30 Days</button>
         {films.map((film, index) => (
-                    <><li key={index}>{film.title} ({film.year})</li><Film /></>
+                    <><Film title={film.title}  poster={film.image}/></>
                   ))}
-        <Film />
-        <Film />
+        
       </main>
     </div>
   );
