@@ -7,6 +7,10 @@ import SocialIcon from "./components/SocialIcon";
 import BackgroundVideo from "./components/BackgroundVideo";
 import Menu  from "./components/Menu";
 import PopularNetflix from "./components/PopularNetflix";
+import SubLinks from "./components/SubLinks";
+import NetflixOriginal from "./components/NetflixOriginal";
+import TredingNow from "./components/TredingNow";
+import SocialNetworkLogos from "./components/SocialNetworkLogos";
 
 
 function App() {
@@ -126,27 +130,6 @@ function App() {
   //    <><Film title={film.title}  poster={film.image} description={film.description}/></>
 //))}
 
-
-        const TredingNow = () =>{
-          return (
-            <div>
-              <h1 id="myList">Trending Now</h1>
-                <div className="box">
-                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t1.PNG?raw=true" alt=""></img></a>
-                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t2.PNG?raw=true" alt=""></img></a>
-                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t3.PNG?raw=true" alt=""></img></a>
-                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t4.PNG?raw=true" alt=""></img></a>
-                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t4.PNG?raw=true" alt=""></img></a>
-                  <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t6.PNG?raw=true" alt=""></img></a>                  
-                </div>
-            </div>
-          )
-
-        }
-
-
-
-
           const Footer = ()=>{
 
             return (
@@ -156,64 +139,9 @@ function App() {
             </footer>
             )
           }
-        const Leslogos = () => {
-          ///////////////////////////////////////////////////////
-          //pour l'instant j'arrive pas a utiliser des icones fa 
-          //////////////////////////////////////////////////////
-          return (
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <a href="#" style={{ marginRight: '10px' }}>
-            </a>
-            <a href="#"><i className="fab fa-facebook-square fa-2x logo"></i></a>
-            <a href="#"><i className="fab fa-instagram fa-2x logo"></i></a>
-            <a href="#"><i className="fab fa-twitter fa-2x logo"></i></a>
-            <a href="#"><i className="fab fa-youtube fa-2x logo"></i></a>
-          </div>
-          )
-        }
-        const NetflixOriginal = () =>{
-          
-          return(
-            <div >
-            <h1>Netflix Originals</h1>
-            <div class="box">
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o1.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o2.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o3.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o4.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o5.PNG?raw=true" alt=""></img></a>
-              <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o6.PNG?raw=true" alt=""></img></a>                
-            </div>
-            </div>
-          )
-        }
 
 
 
-          const SubLinks = ()=> {
-            return (
-              <div className="sub-links">
-                  
-          <ul>
-            <li><a href="#">Audio and Subtitles</a></li>
-            <li><a href="#">Audio Description</a></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Gift Cards</a></li>
-            <li><a href="#">Media Center</a></li>
-            <li><a href="#">Investor Relations</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Legal Notices</a></li>
-            <li><a href="#">Corporate Information</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-            )
-          }
-
-
-  
   return (
     <div >
       <Menu />
@@ -223,7 +151,7 @@ function App() {
       <TredingNow />
       <NetflixOriginal />
       <SocialIcon />
-      <Leslogos />
+      <SocialNetworkLogos />
       <SubLinks />
       <Footer/>
     </div>
