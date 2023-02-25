@@ -1,58 +1,77 @@
-import { Box, Flex, IconButton, Image, Link } from "@chakra-ui/react";
-import { HamburgerIcon, SearchIcon, BellIcon } from "@chakra-ui/icons";
+import React, { useState, useEffect } from "react";
+import { FaBars } from "react-icons/fa";
+import { MdClose } from "react-icons/md";
+import { BsSearch, BsBell } from "react-icons/bs";
+import logo from "./logo.png";
+import "./Menu.css";
 
 function Menu() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener("resize", showButton);
+
   return (
-    <Flex justify="space-between" align="center" px={5} py={3}>
-      <Box>
-        <Link href="#home">
-          <Image
-            src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true"
-            alt="Logo Image"
-          />
-        </Link>
-      </Box>
-
-      <Box display={{ base: "none", md: "block" }}>
-        <Link href="#home" mr={4}>
-          Home
-        </Link>
-        <Link href="#tvShows" mr={4}>
-          TV Shows
-        </Link>
-        <Link href="#movies" mr={4}>
-          Movies
-        </Link>
-        <Link href="#originals" mr={4}>
-          Originals
-        </Link>
-        <Link href="#">Recently Added</Link>
-      </Box>
-
-      <Box display={{ md: "none" }}>
-        <IconButton
-          aria-label="Menu"
-          icon={<HamburgerIcon />}
-          variant="ghost"
-        />
-      </Box>
-
-      <Box display={{ base: "none", md: "block" }}>
-        <Flex align="center">
-          <IconButton
-            aria-label="Search"
-            icon={<SearchIcon />}
-            mr={4}
-            variant="ghost"
-          />
-          <IconButton
-            aria-label="Notifications"
-            icon={<BellIcon />}
-            variant="ghost"
-          />
-        </Flex>
-      </Box>
-    </Flex>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <a href="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <img src={logo} alt="Netflix Logo" />
+        </a>
+        <div className="menu-icon" onClick={handleClick}>
+          {click ? <MdClose /> : <FaBars />}
+        </div>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <a href="/" className="nav-links" onClick={closeMobileMenu}>
+              Accueil
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="/" className="nav-links" onClick={closeMobileMenu}>
+              Séries
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="/" className="nav-links" onClick={closeMobileMenu}>
+              Films
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="/" className="nav-links" onClick={closeMobileMenu}>
+              Nouveautés
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="/" className="nav-links" onClick={closeMobileMenu}>
+              Ma liste
+            </a>
+          </li>
+        </ul>
+        <div className="nav-icons">
+          <a href="/" className="icon-link" onClick={closeMobileMenu}>
+            <BsSearch className="icon search-icon" />
+          </a>
+          <a href="/" className="icon-link" onClick={closeMobileMenu}>
+            <BsBell className="icon bell-icon" />
+          </a>
+        </div>
+      </div>
+    </nav>
   );
 }
 
