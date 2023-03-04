@@ -16,8 +16,10 @@ Ce projet est un clone de la page d'accueil de Netflix construit en utilisant Re
 
 ## Technologies utilisées
 - React
+- Chakra UI
+- The Movie Database API
 - HTML
-- CSS
+
 
 ## Démarrage
 
@@ -32,7 +34,7 @@ Ce projet est un clone de la page d'accueil de Netflix construit en utilisant Re
 
 
 ## Versions
-beta 0.1
+ 1.0
 
 ## Auteurs
 Si vous souhaitez contribuer à ce projet, n'hésitez pas à soumettre une demande de tirage. Je suis toujours ouvert à de nouvelles idées et à des améliorations pour ce projet.
