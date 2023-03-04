@@ -5,6 +5,7 @@ import PromoBanner from './components/PromoBanner';
 import Film from "./components/Film";
 import SocialIcon from "./components/SocialIcon";
 import Menu  from "./components/Menu";
+import Footer from "./components/Footer";
 import PopularNetflix from "./components/PopularNetflix";
 import SubLinks from "./components/SubLinks";
 import NetflixOriginal from "./components/NetflixOriginal";
@@ -42,17 +43,6 @@ function App() {
     }
     fetchFilms();
   }, []);
-
-
-          const Footer = ()=>{
-            return (
-              <footer>
-              <p>©1997-2023 Netflix, Inc.</p>
-              <p>Gabriel Charib © 2023</p>
-            </footer>
-            )
-          }
-
 
 
   return (
